@@ -7,7 +7,7 @@ define('ENVIRONMENT', 'development');
 define('SITE_URL', site_url());
 
 // Google Fonts
-define('GOOGLE_FONTS', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+define('GOOGLE_FONTS', false);
 
 // Navigator Theme Color
 define('THEME_COLOR', false);
@@ -30,7 +30,7 @@ $REGISTERED_MENUS = [
 
 // Extra fonts
 global $load_extra_css;
-// $load_extra_css = [''];
+$load_extra_css = ['MuseoSans'];
 
 // Default Timezone: America - São Paulo
 setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');

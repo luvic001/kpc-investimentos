@@ -9,9 +9,9 @@ function load_extra_css($preload = true)
 		if(!empty($load_extra_css)):
 			foreach ($load_extra_css as $file):
 				if ($preload)
-					___( sprintf('<link rel="stylesheet" href="%s/assets/%s.css" media="screen">', site_url(), $file) );
+					___( sprintf('<link rel="stylesheet" href="%s/assets/fonts/%s.css" media="screen">', get_template_directory_uri(), $file) );
 				else
-					___( sprintf('<link rel="preload" href="%s/assets/%s.css" as="style">', site_url(), $file) );
+					___( sprintf('<link rel="preload" href="%s/assets/fonts/%s.css" as="style">', get_template_directory_uri(), $file) );
 			endforeach;
 		endif;
 	endif;

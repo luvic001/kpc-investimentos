@@ -1,0 +1,59 @@
+section.site-webdoor
+  height: 100%
+  max-height: 800px
+  min-height: 500px
+  #carousel-webdoor
+    height: 100%
+    .carousel-inner
+      height: 100%
+      .carousel-item
+        height: 100%
+        .slide-content
+          height: 100%
+          position: relative
+          .slide-background
+            position: absolute
+            left: 0
+            top: 0
+            height: 100%
+            width: 100%
+            z-index: 0
+            background-position: center
+            background-size: cover
+          .slide-text
+            position: relative
+            z-index: 1
+            h2
+              max-width: 300px
+              font-weight: 700
+              line-height: 40px
+              +font-size(32px)
+              +breakpoint(sm) 
+                line-height: 50px
+                +font-size(42px)
+              &:after
+                content: ''
+                display: block
+                margin: 20px 0 25px
+                background-color: $azul-claro
+                width: 70%
+                height: 8px
+
+    .carousel-indicators
+      margin-bottom: 2.5rem
+      button
+        background-color: $transparent
+        height: 6px
+        width: 30px
+        border: 2px solid $azul
+        +default_transition()
+        &.active
+          background-color: $azul
+
+  .scroll-down
+    position: absolute
+    bottom: 0
+    margin: auto
+    margin-bottom: 2.5rem
+    left: 0
+    right: 0
