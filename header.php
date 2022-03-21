@@ -50,3 +50,4 @@ global $TEMPLATE_DIRECTORY_URI;
 <?php 
 
 get_modules('Popup');
+get_modules('Header');
