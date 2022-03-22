@@ -3,14 +3,28 @@ $azul-escuro: #242B59
 $azul-claro: #19A1BC
 $cinza-paragrafo: #343434
 
+body
+  background-color: #dddddd
+  main.site-content
+    display: block
+    margin: 0 auto
+    max-width: 1920px
+
+
 h1
-  +font-size(42px)
+  +font-size(36px)
+  +breakpoint(sm)
+    +font-size(42px)
 
 h2
-  +font-size(30px)
+  +font-size(26px)
+  +breakpoint(sm)
+    +font-size(30px)
 
 h3
-  +font-size(24px)
+  +font-size(20px)
+  +breakpoint(sm)
+    +font-size(24px)
 
 h4
   +font-size(18px)
@@ -36,5 +50,46 @@ h1, h2, h3, h4, h5, h6
   color: $azul
   font-weight: 900
 
+ul, ol
+  li
+    margin-bottom: 5px
+    line-height: 22px
+
+ul
+  li
+    position: relative
+    margin-left: 1rem
+    &:before
+      content: ''
+      width: 5px
+      height: 5px
+      background-color: $azul-claro
+      +border-radius(100px)
+      position: absolute
+      left: -1rem
+      top: 7px
+
+  
 main.site-content
   height: 100%
+
+  .site-sections
+    background-color: $branco
+    padding: 60px 0
+    +breakpoint(sm)
+      padding: 100px 0
+    .section-title
+      margin-bottom: 35px
+      &.no-after
+        &:after
+          content: initial
+      &:after
+        content: ''
+        display: block
+        margin: 20px 0
+        width: 55px
+        height: 4px
+        background-color: $azul-claro
+
+  .editor-content
+    margin-bottom: 65px

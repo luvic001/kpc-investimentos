@@ -1,0 +1,31 @@
+section.section-quem-somos
+  .featured-image
+    margin-bottom: 35px
+    &:after
+      content: ''
+      display: block
+      height: 65px
+      width: 225px
+      background-color: rgba($azul-claro, .7)
+      margin-top: -1rem
+      position: relative
+      z-index: 1
+    figure
+      z-index: 0
+      +flex-start-center()
+      position: relative
+      img
+        max-width: 100%
+
+  .qs-mvv
+    .editor-content
+      margin-bottom: 30px
+      h3
+        +font-size(18px)
+        margin-bottom: 12px
+        font-weight: 700
+        color: $azul-claro
+
+      ul
+        li
+          margin-bottom: 0
