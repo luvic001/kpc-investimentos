@@ -6,5 +6,6 @@ get_header();
 
 get_modules('Webdoor', 'page/home');
 get_modules('Quem-Somos', 'page/home');
+get_modules('Realizacoes', 'page/home');
 
 get_footer();

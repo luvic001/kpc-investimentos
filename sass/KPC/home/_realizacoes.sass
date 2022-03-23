@@ -1,0 +1,54 @@
+section.site-sections.section-realizacoes
+  background-color: $azul-escuro
+  padding: 150px 0 80px
+  background-size: cover
+  background-position: center
+  ul.numbers
+    display: flex
+    justify-content: center
+    align-items: flex-start
+    flex-wrap: wrap
+    li
+      display: flex
+      align-items: flex-start
+      margin-left: 0
+      margin-bottom: 60px
+      width: 100%
+      justify-content: center
+      +breakpoint(sm)
+        justify-content: flex-start
+        width: 50%
+      +breakpoint(lg)
+        margin-bottom: 60px
+        margin-right: 60px
+        width: auto
+      &:last-child
+        margin-right: 0
+      &:before
+        content: initial
+      span
+        display: block
+        &.text
+          display: inline-block
+          color: $branco
+          max-width: 85px
+          line-height: 19px
+          position: relative
+          margin-right: 19px
+          +breakpoint(sm)
+            margin-right: 25px
+          &:before
+            content: ''
+            width: 15px
+            height: 1px
+            background-color: $azul-claro
+            display: block
+            margin: 0 0 5px
+        &.number
+          color: $azul-claro
+          font-weight: 900
+          +font-size(57px)
+          margin-top: 11px
+          +breakpoint(sm)
+            margin-top: 19px
+            +font-size(76px)
