@@ -1,0 +1,82 @@
+section.site-sections.section-como-atuamos
+  background-size: cover
+  background-position: center
+  background-color: #f4f4f4
+  padding: 0 0 60px
+  +breakpoint(sm)
+    padding: 100px 0
+  figure.featured-image
+    justify-content: flex-start
+    align-items: center
+    margin-left: -2rem
+    img
+      max-width: 320px
+      height: auto
+
+  .editor-content
+    p
+      +font-size(20px)
+      line-height: 28px
+
+  .accordion
+    .accordion-item
+      background-color: $transparent
+      border: 0
+
+      h2.accordion-header
+        .accordion-button
+          padding: 1.3rem 1.2rem
+          color: $azul
+          font-weight: 700
+          +font-size(18px)
+          background-color: $transparent
+          +border-radius(0)
+          +shadow(none)
+          display: flex
+          align-items: center
+          border-bottom: 1px solid rgba($azul-claro, .5)
+          position: relative
+          img
+            margin-right: 10px
+          &[aria-expanded="true"]
+            border-bottom: 0
+            background-color: rgba($branco, .5)
+            span.accordion-arrow
+              +transform(rotate(180deg))
+          &:after
+            content: initial
+          span.accordion-arrow
+            position: absolute
+            right: 1rem
+            +default_transition()
+            height: 27px
+            +transform(rotate(0deg))
+            
+
+      &:first-of-type
+        h2
+          .accordion-button
+            border-top: 1px solid rgba($azul-claro, .5)
+            &[aria-expanded="true"]
+              border-top: 0
+
+
+      &:first-of-type,
+      &:last-of-type
+        +border-radius(0)
+      
+      &:last-of-type
+        h2
+          .accordion-button
+            border-top: 0
+            
+      .accordion-collapse
+        +default_transition()
+        border-bottom: 0
+        &.show,
+        &.collapsing
+          border-bottom: 1px solid rgba($azul-claro, .5)
+          background-color: rgba($branco, .6)
+        
+        .accordion-body
+          padding-top: 0

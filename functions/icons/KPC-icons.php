@@ -9,3 +9,9 @@ $site_svg['angle-down-kpc'] = '
   </g>
 </svg>
 ';
+
+$site_svg['angle-down-kpc--accordion'] = '
+<svg xmlns="http://www.w3.org/2000/svg" width="17.544" height="10" viewBox="0 0 17.544 10">
+  <path id="chevron-down" d="M15.522,21.925,6.75,13.153l1.228-1.228,7.544,7.544,7.544-7.544,1.228,1.228Z" transform="translate(-6.75 -11.925)" fill="#1c99b6"/>
+</svg>
+';
