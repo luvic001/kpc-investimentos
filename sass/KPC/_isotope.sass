@@ -1,0 +1,85 @@
+.isotope-switcher
+  margin-top: 0px
+  margin-bottom: 30px
+  ul
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-start
+    +breakpoint(sm)
+      justify-content: center
+    li
+      margin-bottom: 1rem
+      margin-right: 1rem
+      margin-left: 0
+      &:before
+        content: initial
+      +breakpoint(sm)
+        margin-bottom: 2rem
+        margin-right: 2rem
+      &:last-child
+        margin-right: 0
+
+      &:after
+        content: ''
+        width: 0
+        height: 2px
+        margin: 5px 0
+        background-color: $azul-claro
+        display: block
+        +default_transition()
+      &.active
+        &:after
+          width: 20px
+      a
+        color: #444444
+        font-family: $font-default
+        text-transform: uppercase
+        font-weight: 500
+        letter-spacing: 1px
+        +default_transition()
+        +font-size(16px)
+        text-decoration: none
+        +breakpoint(sm)
+          +font-size(18px)
+        &:hover
+          text-decoration: none
+          color: $azul
+      
+      &.active
+        a
+          color: $azul
+
+.isotope-items
+  .isotope-item
+    margin-bottom: 2rem
+    a
+      display: block
+      position: relative
+      overflow: hidden
+      +border-radius(20px)
+      text-decoration: none
+      .case-background
+        min-height: 225px
+        background-size: cover
+        background-position: center
+        height: 100%
+        width: 100%
+        +default_transition()
+        +filter(saturate(.4))
+      
+      &:hover
+        .case-background
+          +filter(saturate(1))
+
+      .case-content
+        background-color: #f4f4f4
+        padding: 1rem 1.4rem 2rem
+        p
+          font-weight: 700
+          +font-size(18px)
+          color: $azul
+          margin-bottom: 0
+          span
+            display: block
+            font-weight: 400
+            +font-size(14px)
