@@ -11,7 +11,7 @@ $section = to_object([
 
 ?>
 
-<section class="site-sections section-como-atuamos">
+<section class="site-sections section-como-atuamos" id="como-atuamos">
   <style>
     @media (min-width: 768px) {
       section.section-como-atuamos {

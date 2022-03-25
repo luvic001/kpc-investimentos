@@ -16,7 +16,7 @@ $query = new WP_Query([
 
 ?>
 
-<section class="site-sections">
+<section class="site-sections section-projetos-realizados" id="projetos-realizados">
 
   <div class="container">
     <div class="section-title centered-title">
@@ -83,3 +83,7 @@ $query = new WP_Query([
   </div>
 
 </section>
+
+<?php
+
+wp_reset_query();

@@ -1,0 +1,43 @@
+section.site-sections.section-quem-faz-a-kpc
+  background-color: #f4f4f4
+  .card-fundadores
+    +border-radius(20px)
+    overflow: hidden
+    background-color: $branco
+    display: flex
+    margin-bottom: 20px
+    flex-wrap: wrap
+    +breakpoint(xs)
+      flex-wrap: nowrap
+    .background-fundador
+      background-size: cover
+      background-position: center
+      height: auto
+      width: 100%
+      +filter(saturate(.6))
+      min-height: 365px
+      min-width: 100%
+      +breakpoint(xs)
+        min-height: 155px
+        min-width: 180px
+      +breakpoint(sm)
+        min-height: 225px
+        min-width: 240px
+      +breakpoint(lg)
+        min-height: 285px
+        min-width: 300px
+    .card-fundadores-content
+      padding: 30px
+      h3
+        margin-bottom: 0
+        +font-size(18px)
+        font-weight: 700
+      p
+        +font-size(14px)
+        line-height: 18px
+        margin-bottom: 5px
+        min-height: 145px
+        &.cargo
+          +font-size(16px)
+          min-height: initial
+          line-height: 22px
