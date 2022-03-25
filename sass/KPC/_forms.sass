@@ -12,3 +12,59 @@
     text-decoration: none
     color: $branco
     background-color: $azul-escuro
+
+form
+  .input-text
+    margin-bottom: 1rem
+    label
+      width: 100%
+      input, textarea
+        width: 100%
+        font-family: $font-default
+        padding: 5px 10px
+        +border-radius(3px)
+        border: 0
+        background-color: rgba($branco, .8)
+        &::placeholder
+          color: $azul
+          font-weight: 500
+  
+  .input-submit
+    input, button
+      background-color: $azul-claro
+      display: inline-block
+      text-transform: uppercase
+      font-family: $font-default
+      color: $azul-escuro
+      text-decoration: none
+      padding: 19px 41px
+      border: 0
+      +border-radius(10px)
+      +default_transition()
+      &:hover
+        text-decoration: none
+        color: $branco
+        background-color: $azul-escuro
+
+  .wpcf7-not-valid-tip
+    font-family: $font-default
+    font-weight: 700
+    display: block
+    margin-top: 5px
+
+  .wpcf7-response-output
+    padding: 1rem !important
+    font-family: $font-default
+    text-align: center
+    background-color: #f4f4f4
+    margin: 1rem 0 !important
+    border: 0 !important
+  &.invalid
+    .wpcf7-response-output
+      background-color: #ffb900
+      color: $azul
+  
+  &.sent
+    .wpcf7-response-output
+      background-color: #0a3
+      color: $branco
