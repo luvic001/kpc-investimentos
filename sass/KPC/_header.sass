@@ -5,18 +5,21 @@ body
       top: 45px
       +breakpoint(xs)
         top: 32px
-    &.body-scrolled
+    &.body-scrolled,
+    &.single
       header.site-header
         top: 0
         +breakpoint(sm)
           top: 32px
-  &.body-scrolled
+  &.body-scrolled,
+  &.single
     header.site-header
       top: 0
       +shadow(0 0 7px #bbbbbb)
       background-color: $branco
       padding: 10px 0
-      h1
+      h1,
+      h2
         img
           max-width: 100px
   header.site-header
@@ -34,7 +37,7 @@ body
     padding: 20px 0
     +breakpoint(sm)
       padding: 40px 0
-    h1
+    h1, h2
       margin-bottom: 0
       img
         +default_transition()

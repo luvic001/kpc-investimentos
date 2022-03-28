@@ -5,6 +5,10 @@ $cinza-paragrafo: #343434
 
 body
   background-color: #dddddd
+  +font-size(16px)
+  line-height: 22px
+  font-family: $font-default
+  color: #434343
   main.site-content
     display: block
     margin: 0 auto
@@ -51,6 +55,7 @@ h1, h2, h3, h4, h5, h6
   font-weight: 900
 
 ul, ol
+  margin-bottom: 1rem
   li
     margin-bottom: 5px
     line-height: 22px
@@ -69,7 +74,17 @@ ul
       left: -1rem
       top: 7px
 
-  
+ol
+  li
+    list-style-type: decimal
+    margin-left: 1rem
+
+blockquote
+  background-color: #f4f4f4
+  padding: 10px 1rem
+  border-left: 3px solid #444444
+  margin-bottom: 1rem 
+
 main.site-content
   height: 100%
 
