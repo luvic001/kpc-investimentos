@@ -18,10 +18,14 @@ body
       +shadow(0 0 7px #bbbbbb)
       background-color: $branco
       padding: 10px 0
+      .d-flex
+        align-items: center !important
       h1,
       h2
         img
           max-width: 100px
+          +breakpoint(sm)
+            max-width: 140px
   header.site-header
     position: fixed
     width: 100%
