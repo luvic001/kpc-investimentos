@@ -1,0 +1,48 @@
+section.post-switcher
+  background-color: #f4f4f4
+  padding: 30px 0
+  +breakpoint(xs)
+    padding: 30px 0 80px
+  ul
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    margin-bottom: 0
+    li
+      margin-left: 0
+      margin-right: 0
+      +breakpoint(xs)
+        margin-right: 10px
+      +breakpoint(md)
+        margin-right: 50px
+      &:last-of-type
+        margin-right: 0
+      &:before
+        content: initial
+
+      a
+        background-color: $branco
+        display: flex
+        text-decoration: none
+        padding: 18px
+        +border-radius(10px)
+        color: $azul
+        display: flex
+        align-items: center
+        +font-size(16px)
+        +breakpoint(md)
+          +font-size(20px)
+        &:hover
+          background-color: #fcfcfc
+        span.icon
+          width: 25px
+          +breakpoint(md)
+            width: 55px
+          i
+            +font-size(20px)
+            +breakpoint(md)
+              +font-size(24px)
+      
+      &.next
+        span
+          text-align: right

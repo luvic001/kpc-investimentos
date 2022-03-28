@@ -12,5 +12,6 @@ get_modules('Banner', 'page/single/projetos', [
 ]);
 
 get_modules('Page-Content', 'page/single/projetos');
+get_modules('Post-switcher', 'page/single/projetos');
 
 get_footer();
