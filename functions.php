@@ -25,7 +25,9 @@ define('PATH', $TEMPLATE_DIRECTORY);
 
 // Menus
 $REGISTERED_MENUS = [
-  'menu-principal' => __( 'Menu Principal' )
+  'menu-principal' => __( 'Menu Principal' ),
+  'menu-footer-1' => 'Menu esquerdo do rodapé',
+  'menu-footer-2' => 'Menu direito do rodapé',
 ];
 
 // Extra fonts

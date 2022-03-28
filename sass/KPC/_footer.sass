@@ -1,0 +1,86 @@
+footer.site-footer
+  background-color: $azul
+  padding: 90px 0 30px
+  
+  .site-logo
+    margin-bottom: 50px
+    +breakpoint(md)
+      margin-bottom: 0
+
+  .footer-navigation
+    margin-bottom: 50px
+    +breakpoint(md)
+      margin-bottom: 120px
+    article.footer-widget
+      display: flex
+      .widget-icon
+        height: auto
+        margin-right: 15px
+        width: 22px
+      .widget-content
+        margin-top: 10px
+        h3.widget-title
+          color: $azul-claro
+          font-weight: 400
+          +font-size(17px)
+          line-height: 20px
+          text-transform: uppercase
+        address
+          font-family: $font-default
+          color: $branco
+          +font-size(14px)
+          line-height: 22px
+        
+      &.footer-menu
+        width: 100%
+        position: relative
+        padding-left: 0
+        margin-top: 30px
+        +breakpoint(sm)
+          margin-top: 0
+          padding-left: 110px
+        &:before
+          width: 1px
+          height: 100%
+          position: absolute
+          background-color: $azul-claro
+          left: 50px
+          +breakpoint(sm)
+            content: ''
+        .widget-content
+          width: 100%
+          nav.menu-site
+            justify-content: space-between
+            flex-wrap: wrap
+            width: 100%
+            +breakpoint(xs)
+              flex-wrap: nowrap
+            > div
+              width: 100%
+              +breakpoint(xs)
+                width: auto
+              ul
+                li
+                  margin-left: 0
+                  &:before
+                    content: initial
+                  a
+                    color: $branco
+                    +font-size(14px)
+                    text-transform: uppercase
+                    text-decoration: none
+
+  .footer-credits
+    p
+      color: $branco
+      font-weight: 300
+      width: 100%
+      text-align: center
+      +breakpoint(sm)
+        width: auto
+        text-align: left
+      &.dev-link
+        +breakpoint(sm)
+          text-align: right
+        img
+          margin-bottom: -5px
