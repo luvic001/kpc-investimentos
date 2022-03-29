@@ -19,7 +19,7 @@ get_modules('Breadcrumb');
           $endereco = get_field('pj-content-address');
           if ($endereco): 
             ?>
-            <p>
+            <p class="projetos-item">
               <b>Endereço:</b><br />
               <?= $endereco ?>
             </p>
@@ -39,7 +39,7 @@ get_modules('Breadcrumb');
         <?php 
           $adicionais = to_object(get_field('pj-content-additional'));
           if ($adicionais): 
-            ___('<p>');
+            ___('<p class="projetos-item">');
             foreach ($adicionais as $add):
               ?>
               <b><?= $add->{'pj-content-additional-title'} ?>:</b>
