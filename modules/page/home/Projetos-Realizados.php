@@ -1,12 +1,14 @@
 <?php
 
 if (!defined('PATH')) exit;
+global ${'section-title'};
+
 $terms = get_terms('categoria-de-projetos', [
   'hide_empty' => false
 ]);
 
 $section = (object) [
-  'title' => get_field('pj-title')
+  'title' => get_field('pj-title') ?: ${'section-title'}
 ];
 
 $query = new WP_Query([

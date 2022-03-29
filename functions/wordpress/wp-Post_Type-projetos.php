@@ -5,7 +5,7 @@ if (!defined('PATH')) exit;
 function wp_post_type__projetos() {
 
   $labels = [
-		'name' => 'Projetos',
+		'name' => 'Projetos Realizados',
 		'singular_name' => 'Projeto',
 	];
 
@@ -16,7 +16,7 @@ function wp_post_type__projetos() {
 		'menu_icon' => 'dashicons-admin-multisite',
 		'supports' => [ 'title', 'editor', 'thumbnail', 'custom-fields', 'excerpt' ],
 		'can_export' => true,
-		'has_archive' => false
+		'has_archive' => true
 	];
 
 	register_post_type( 'projetos', $args );
