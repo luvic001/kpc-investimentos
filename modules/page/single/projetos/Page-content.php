@@ -4,11 +4,13 @@ if (!defined('PATH')) exit;
 
 getCurScript('slider-pro', 'page/single/projetos');
 getCurStyleSheet('slider-pro', 'page/single/projetos');
+get_modules('Breadcrumb');
 
 ?>
 
 <section class="page-content">
   <div class="container">
+
     <div class="row">
       <div class="col-md-5">
         <h2><?= get_the_title() ?></h2>
