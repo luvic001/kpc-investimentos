@@ -30,18 +30,14 @@ section.post-switcher
         display: flex
         align-items: center
         +font-size(16px)
-        +breakpoint(md)
-          +font-size(20px)
         &:hover
           background-color: #fcfcfc
         span.icon
           width: 25px
+          position: relative
+          top: -3.3px
           +breakpoint(md)
-            width: 55px
-          i
-            +font-size(20px)
-            +breakpoint(md)
-              +font-size(24px)
+            width: 45px
       
       &.next
         span

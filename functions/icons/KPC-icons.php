@@ -36,3 +36,15 @@ $site_svg['navigation-footer'] = '
   <path id="navigate-outline" d="M31.5,4.5,4.5,16.885H18.563a.563.563,0,0,1,.563.563V31.5Z" transform="translate(-3.5 -3.5)" fill="none" stroke="#1dbfe5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
 </svg>
 ';
+
+$site_svg['seta-esquerda'] = '
+<svg xmlns="http://www.w3.org/2000/svg" width="17.486" height="15.986" viewBox="0 0 17.486 15.986">
+  <path id="Caminho_107" data-name="Caminho 107" d="M19.168,11.6,17.577,10.01,9.584,18,17.577,26l1.591-1.591-5.277-5.277H27.07v-2.25H13.891Z" transform="translate(-9.584 -10.01)" fill="#042d72"/>
+</svg>
+';
+
+$site_svg['seta-direita'] = '
+<svg xmlns="http://www.w3.org/2000/svg" width="17.486" height="15.986" viewBox="0 0 17.486 15.986">
+  <path id="Caminho_107" data-name="Caminho 107" d="M17.486,11.6l1.591-1.591L27.07,18,19.077,26l-1.591-1.591,5.277-5.277H9.584v-2.25H22.763Z" transform="translate(-9.584 -10.01)" fill="#042d72"/>
+</svg>
+';

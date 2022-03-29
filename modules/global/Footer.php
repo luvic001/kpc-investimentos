@@ -55,6 +55,9 @@ global $sitename;
       </div>
     </div>
 
+  </div>
+
+  <div class="container-fluid">
     <div class="footer-credits">
       <div class="d-flex flex-wrap flex-md-nowrap justify-content-center justify-content-md-between">
         <p class="">© 2022 KPC Investimentos. Todos os direitos reservados</p>
@@ -71,6 +74,6 @@ global $sitename;
         </p>
       </div>
     </div>
-
   </div>
+
 </footer>

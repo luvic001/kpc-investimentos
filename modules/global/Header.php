@@ -14,7 +14,7 @@ $logo_elem = is_front_page() ? 'h1' : 'h2';
 
 <header class="site-header">
 
-  <div class="container">
+  <div class="container-fluid">
 
     <div class="d-flex justify-content-between align-items-center align-items-md-start">
 

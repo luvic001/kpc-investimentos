@@ -34,7 +34,7 @@ endif;
             href="<?= $prev_post->link ?>"
             title="<?= $prev_post->title ?>">
             <span class="icon">
-              <i class="fa-solid fa-angle-left"></i>
+              <?= svg('seta-esquerda') ?>
             </span>
             VER PROJETO ANTERIOR
           </a>
@@ -47,7 +47,7 @@ endif;
             title="<?= $next_post->title ?>">
             VER PRÓXIMO PROJETO
             <span class="icon">
-              <i class="fa-solid fa-angle-right"></i>
+              <?= svg('seta-direita') ?>
             </span>
           </a>
         </li>

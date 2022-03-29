@@ -20,7 +20,7 @@ footer.site-footer
       .widget-content
         margin-top: 10px
         h3.widget-title
-          color: $azul-claro
+          color: #1dbfe5
           font-weight: 400
           +font-size(17px)
           line-height: 20px
@@ -38,13 +38,15 @@ footer.site-footer
         margin-top: 30px
         +breakpoint(sm)
           margin-top: 0
-          padding-left: 110px
+          padding-left: 27%
         &:before
           width: 1px
           height: 100%
           position: absolute
-          background-color: $azul-claro
-          left: 50px
+          background-color: #1dbfe5
+          left: 60px
+          +breakpoint(lg)
+            left: 80px
           +breakpoint(sm)
             content: ''
         .widget-content
@@ -71,6 +73,9 @@ footer.site-footer
                     text-decoration: none
 
   .footer-credits
+    padding: 0
+    +breakpoint(sm)
+      padding: 0 2rem
     p
       color: $branco
       font-weight: 300
