@@ -4,7 +4,7 @@ if (!defined('PATH')) exit;
 global ${'section-title'};
 
 $terms = get_terms('categoria-de-projetos', [
-  'hide_empty' => false
+  'hide_empty' => true
 ]);
 
 $section = (object) [
