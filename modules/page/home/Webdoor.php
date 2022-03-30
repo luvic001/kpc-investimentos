@@ -18,7 +18,7 @@ if ($webdoor):
         <div class="carousel-item carousel-item-<?= $ind ?> <?= ($ind == 0 ? 'active' : null) ?>">
           <div class="slide-content">
 
-            <div class="slide-background">
+            <div class="slide-background background-parallax">
               <style>
                 .carousel-item-<?= $ind ?> .slide-background {
                   background-image: url('<?= wp_get_image($item->{'webdoor-image_mobile'}) ?>');

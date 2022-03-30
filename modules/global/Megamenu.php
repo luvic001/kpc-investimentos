@@ -17,33 +17,47 @@ if (!defined('PATH')) exit;
       <?php menu() ?>
     </div>
 
-    <div class="redes-sociais">
-      <p>Siga-nos</p>
-      <?php $rs = get_redes_sociais(); ?>
-      <ul class="redes-sociais">
-        <?php 
-        
-          foreach ($rs as $key => $label): 
-            $tm = get_theme_mod(sprintf('rs-%s', $key));
-            if ($tm) {
-              ___(
-                sprintf(
-                  '<li>
-                    <a href="%s" target="_blank" title="%s">
-                      <i class="fa-brands fa-%s"></i>
-                    </a>
-                  </li>',
-                  $tm,
-                  $label,
-                  $key
-                )
-              );
-            }
-          endforeach;
-        
+    <?php 
+      $rs = get_redes_sociais(); 
+      $ind = 0;
+      foreach ($rs as $key => $label) {
+        if (get_theme_mod('rs-'.$key)) {
+          $ind++;
+        }
+      }
+
+      if ($ind > 0):
+
         ?>
-      </ul>
-    </div>
+        <div class="redes-sociais">
+          <p>Siga a KPC</p>
+          <ul class="redes-sociais">
+            <?php 
+            
+              foreach ($rs as $key => $label): 
+                $tm = get_theme_mod(sprintf('rs-%s', $key));
+                if ($tm) {
+                  ___(
+                    sprintf(
+                      '<li>
+                        <a href="%s" target="_blank" title="%s">
+                          <i class="fa-brands fa-%s"></i>
+                        </a>
+                      </li>',
+                      $tm,
+                      $label,
+                      $key
+                    )
+                  );
+                }
+              endforeach;
+            
+            ?>
+          </ul>
+        </div>
+        <?php
+      endif;
+      ?>
 
   </div>
 

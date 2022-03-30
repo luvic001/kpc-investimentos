@@ -19,9 +19,7 @@ $section = to_object([
       }
     }
   </style>
-  <figure class="featured-image d-flex d-md-none">
-    <img src="<?= wp_get_image($section->background) ?>" alt="Section Como Atuamos">
-  </figure>
+  
   <div class="container">
     <div class="grid">
       <div class="offset-md-6 g-md-6">
