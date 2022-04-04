@@ -33,11 +33,14 @@ section.site-sections.section-realizacoes
           display: inline-block
           color: $branco
           max-width: 85px
+          min-width: 85px
           line-height: 19px
           position: relative
           margin-right: 19px
           +breakpoint(sm)
             margin-right: 25px
+          +breakpoint(md)
+            min-width: initial
           &:before
             content: ''
             width: 15px
