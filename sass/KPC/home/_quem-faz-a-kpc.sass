@@ -29,6 +29,8 @@ section.site-sections.section-quem-faz-a-kpc
         min-height: 285px
         min-width: 300px
         max-width: 300px
+      +breakpoint(1400px)
+        min-height: 265px
     .card-fundadores-content
       padding: 30px
       h3
@@ -38,8 +40,12 @@ section.site-sections.section-quem-faz-a-kpc
       p
         +font-size(14px)
         line-height: 18px
-        margin-bottom: 5px
-        min-height: 145px
+        margin-bottom: 1rem
+        +breakpoint(sm)
+          margin-bottom: 5px
+          min-height: 145px
+        +breakpoint(1400px)
+          min-height: 120px
         &.cargo
           +font-size(16px)
           min-height: initial
