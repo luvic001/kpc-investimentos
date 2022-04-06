@@ -29,6 +29,25 @@ if ($webdoor):
                     background-image: url('<?= wp_get_image($item->{'webdoor-image_desktop'}) ?>');
                   }
                 }
+
+                <?php if ($item->{'webdoor-content-color'}): ?>
+                  .carousel-item-<?= $ind ?> .slide-text h2 {
+                    color: <?= $item->{'webdoor-content-color'} ?>;
+                  }
+                <?php endif; ?>
+
+                <?php if ($item->{'webdoor-content-line_color'}): ?>
+                  section.site-webdoor 
+                    #carousel-webdoor 
+                      .carousel-inner 
+                        .carousel-item.carousel-item-<?= $ind ?>
+                          .slide-content 
+                            .slide-text 
+                              h2:after {
+                                background-color: <?= $item->{'webdoor-content-line_color'} ?>;
+                              }
+                <?php endif; ?>
+
               </style>
             </div>
             
