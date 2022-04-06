@@ -16,9 +16,9 @@ $section = to_object([
     }
   </style>
   <div class="container">
-    <ul class="numbers">
+    <ul class="numbers row">
       <?php foreach ($section->items as $sct): ?>
-      <li>
+      <li class="col-xl-3 col-md-6">
         <span class="text"><?= $sct->{'rl-items-title'} ?></span>
         <span class="number">
           <counternumber until="<?= $sct->{'rl-items-number'} ?>"></counternumber><?= $sct->{'rl-items-sufix'} ?: null ?>
