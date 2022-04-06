@@ -6,9 +6,19 @@ if (!defined('PATH')) exit;
 $wp_customize->add_setting('logo_do_site');
 
 $wp_customize->add_control(new WP_Customize_Media_Control($wp_customize, 'logo_do_site', array(
-  'label' => __('Logo do site (Cabeçalho)'),
+  'label' => __('Logo do site antes de scroll'),
   'section' => 'title_tagline',
   'settings' => 'logo_do_site',
+  'description' => 'Este logo ficará no cabeçalho em todas as páginas do site'
+)));
+
+// Logo do site (Scroll / página interna)
+$wp_customize->add_setting('logo_do_site_scroll');
+
+$wp_customize->add_control(new WP_Customize_Media_Control($wp_customize, 'logo_do_site_scroll', array(
+  'label' => __('Logo do site após scroll / páginas internas'),
+  'section' => 'title_tagline',
+  'settings' => 'logo_do_site_scroll',
   'description' => 'Este logo ficará no cabeçalho em todas as páginas do site'
 )));
 

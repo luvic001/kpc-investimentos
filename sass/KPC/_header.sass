@@ -6,13 +6,15 @@ body
       +breakpoint(xs)
         top: 32px
     &.body-scrolled,
-    &.single
+    &.single,
+    &.post-type-archive
       header.site-header
         top: 0
         +breakpoint(sm)
           top: 32px
   &.body-scrolled,
-  &.single
+  &.single,
+  &.post-type-archive
     header.site-header
       top: 0
       +shadow(0 0 7px #bbbbbb)
@@ -24,8 +26,23 @@ body
         align-items: center !important
       h1,
       h2
+        .logo-before-scroll
+          display: none
+        .logo-after-scroll
+          +flex-center-center()
         img
           max-width: 100px
+      
+      .menu-toggle
+        span
+          background-color: $azul
+          &:last-child
+            background-color: $azul-claro
+        &:hover
+          span
+            background-color: $azul
+            &:last-child
+              background-color: $azul
   header.site-header
     position: fixed
     width: 100%
@@ -43,6 +60,10 @@ body
       padding: 40px 2rem
     h1, h2
       margin-bottom: 0
+      .logo-before-scroll
+        +flex-center-center()
+      .logo-after-scroll
+        display: none
       img
         +default_transition()
         width: auto
@@ -56,17 +77,17 @@ body
         height: 2px
         display: block
         +default_transition()
-        background-color: $azul
+        background-color: $branco
         +border-radius(10px)
         +default_transition()
         &:last-child
           margin-bottom: 0
           width: 50%
-          background-color: $azul-claro
+          background-color: $branco
           margin-left: auto          
       &:hover
         span
-          background-color: $azul-claro
+          background-color: $branco
           &:last-child
             width: 100%
-            background-color: $azul
+            background-color: $branco

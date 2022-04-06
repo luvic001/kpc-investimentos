@@ -20,7 +20,12 @@ $logo_elem = is_front_page() ? 'h1' : 'h2';
 
       <a href="<?= site_url() ?>">
         <<?= $logo_elem ?> class="d-flex align-items-center justify-content-center">
-          <?= get_site_logo('logo_do_site', $logo_alt) ?>
+          <div class="logo-before-scroll">
+            <?= get_site_logo('logo_do_site', $logo_alt) ?>
+          </div>
+          <div class="logo-after-scroll">
+            <?= get_site_logo('logo_do_site_scroll', $logo_alt) ?>
+          </div>
         </<?= $logo_elem ?>>
       </a>
 
