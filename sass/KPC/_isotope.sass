@@ -2,10 +2,11 @@
   margin-top: 0px
   margin-bottom: 30px
   ul
-    display: flex
-    flex-wrap: wrap
-    justify-content: flex-start
+    display: none
     +breakpoint(sm)
+      flex-wrap: wrap
+      justify-content: flex-start
+      display: flex
       justify-content: center
     li
       margin-bottom: 1rem
@@ -46,6 +47,41 @@
       &.active
         a
           color: $azul
+
+  .selector-switcher
+    position: relative
+    margin: 0 auto
+    +breakpoint(sm)
+      display: none
+    #isotope-selector-home
+      +appearance(none)
+      position: relative
+      padding: 12px 35px 12px 0px
+      border: 0
+      border-bottom: 1px solid $azul-claro
+      +default_transition()
+      width: 100%
+      color: $azul
+      background-color: $transparent
+      z-index: 1
+      text-transform: uppercase
+      font-weight: 700
+      +font-size(14px)
+      &:hover,
+      &:active,
+      &:focus
+        outline: none
+        cursor: pointer
+        color: $azul-claro
+        border-bottom: 1px solid $azul-claro
+    svg
+      position: absolute
+      z-index: 0
+      right: 0
+      top: 10px
+      fill: $azul-claro
+      +default_transition()
+      width: 20px
 
 .isotope-items
   .isotope-item

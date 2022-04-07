@@ -41,6 +41,17 @@ $query = new WP_Query([
             </li>
           <?php endforeach; ?>
         </ul>
+
+        <div class="selector-switcher">
+          <select name="isotope-selector-home" isotope-toggle-seletor="" id="isotope-selector-home">
+            <option value="*">Todos</option>
+            <?php foreach ($terms as $category): ?>
+              <option value=".<?= $category->slug ?>"><?= $category->name ?></option>
+            <?php endforeach; ?>
+          </select>
+          <?= svg('filter') ?>
+        </div>
+
       </div>
 
     <?php endif; ?>
