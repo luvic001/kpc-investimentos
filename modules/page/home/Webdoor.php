@@ -17,7 +17,14 @@ if ($webdoor):
       <?php foreach ($webdoor as $item): ?>
         <div class="carousel-item carousel-item-<?= $ind ?> <?= ($ind == 0 ? 'active' : null) ?>">
           <div class="slide-content">
-
+            <?php if ($item->{'background-video-code'}): ?>
+              <div class="background-video">
+                <video class="wp-video" width="640" height="390" preload="metadata" autoplay="autoplay" muted loop>
+                  <source type="video/mp4" src="<?= $item->{'background-video-code'} ?>">
+                  <a href="<?= $item->{'background-video-code'} ?>"><?= $item->{'background-video-code'} ?></a>
+                </video>
+              </div>
+            <?php endif; ?>
             <div class="slide-background background-parallax">
               <style>
                 .carousel-item-<?= $ind ?> .slide-background {

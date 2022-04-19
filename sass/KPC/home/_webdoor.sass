@@ -12,6 +12,22 @@ section.site-webdoor
         .slide-content
           height: 100%
           position: relative
+          .background-video
+            position: absolute
+            left: 0
+            top: 0
+            height: 100%
+            width: 100%
+            z-index: 1
+            > div
+              width: 100% !important
+              height: 100%
+            iframe, embed, video
+              width: 100%
+              margin: 0
+              height: 100%
+            video
+              object-fit: fill
           .slide-background
             position: absolute
             left: 0
@@ -25,7 +41,7 @@ section.site-webdoor
               background-attachment: fixed
           .slide-text
             position: relative
-            z-index: 1
+            z-index: 2
             h2
               max-width: 300px
               font-weight: 700
