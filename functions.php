@@ -32,7 +32,7 @@ $REGISTERED_MENUS = [
 
 // Extra fonts
 global $load_extra_css;
-// $load_extra_css = ['MuseoSans'];s
+$load_extra_css = ['MuseoSans'];
 
 // Default Timezone: America - São Paulo
 setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
